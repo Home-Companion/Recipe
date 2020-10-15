@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | UserProfile</title>
+</head>
+
+<style type="text/css">
+
+    #top_bar{
+        background-color: rgb(255,0,128);
+        color: #ffffff; 
+        height : 90px; 
+        padding:15px;
+        text-align: 30px;
+    }
+
+    #search_box{
+        border-radius: 4px;
+        margin-left: 150px;
+        font-size: 18px;
+        height: 30px;
+        padding: 4px;
+        width: 450px;
+        background-image: url(recipe-search-button.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #profile_pic{
+
+        width : 150px;
+        margin-top: -200px;
+        border-radius: 50%;
+        border: solid 2px white;
+    }
+
+    #menu_buttons{
+
+        width: 100px;
+        display: inline-block;
+        margin-left: 150px;
+        font-size: 25px;
+    }
+
+    #friends_img{
+        width: 75px;
+        float: left;
+        margin: 8px;
+    }
+    
+    #friends_bar{
+        background-color: white;
+        min-height: 4px;
+        color: violet;
+        font-style: italic;
+        background-color: tomato;
+        text-align: center;
+        font-size: 25px;
+        padding: 8px;
+    }
+
+</style>
+
+<body style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    
+    <div id="top_bar">
+        <div style="padding:10px; font-size:30px; margin-left: 100px;">
+
+            Recipes <input type="text" id="search_box" placeholder = "Search for Recipes">
+            <img src="selfie.jpg" style="width: 45px; float:right;">
+        </div>
+    </div>
+
+    <div styles="background-color:  white; text-align:center; color:#405d9b">
+
+        <div>
+
+            <img src="mountain.jpg" style="margin-left:100px; width:1400px; height:400px;margin-left:40px;">
+            <img id="profile_pic" src="selfie.jpg" style="margin-left: 680px; flex:2;">
+            <br />
+            <div style="font-size:30px; text-align: center;">Name</div>
+            <br />
+            <br />
+            <div id="menu_buttons">Timeline</div> 
+            <div id="menu_buttons">About</div> 
+            <div id="menu_buttons">Friends</div> 
+            <div id="menu_buttons">Recipes</div>
+            <div id="menu_buttons">Settings</div>
+        </div>
+        
+        <!--Below the profile pic and cover area-->
+        <div style="display: flex;">
+            
+            <!--Friends-->
+            <div style="min-height: 400px; background-color: tomato; flex:1;">
+
+                <div id="friends_bar">
+
+                    Friends <br />        
+
+                </div>
+                <div id="friends">
+
+                    <img id="friends_img" src="selfie.jpg">
+                    <br>
+                    First User        
+
+                 </div>
+
+            </div>
+            <!--Posts Area-->
+            <div style="min-height: 400px; background-color: violet;flex:2.5;"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
