@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: rgba(33,1,80);
+}
+h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding: 200px 0 100px;
+    color: #555;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+a{
+    display: flex;
+    background: rgb(54, 1, 134);
+    height: 45px;
+    width: 40px;
+    margin: 20px 20px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   
+}
+a i{
+    font-size: 25px;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+a:hover{
+ 
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(2px);
+    padding-left: 10px;
+}
+
+a:hover i{
+    transform: scale(0.90);
+    padding-left: 3px;
+}
+
+a:hover .fa-search{
+    color: #3b5998;
+}
+
+a:hover .fa-twitter{
+    color: skyblue;
+}
+
+a:hover .fa-whatsapp{
+    color: mediumseagreen;
+}
+
+a:hover .fa-instagram{
+    color: crimson;
+}
+
+a:hover .fa-youtube{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 150px;
+  height: 100%;
+  background:rgba(33,1,80);
+  transition: all .5s ease;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: rgba(33,1,80);
+  user-select: none;
+  border-top-right-radius: 100px;
+}
+
+
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 50%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 22px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 25px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 25px;
+  color: rgba(209, 201, 201, 0.932);
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 25px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
