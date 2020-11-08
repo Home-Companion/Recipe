@@ -1,7 +1,7 @@
 # Recipe
-A recipe website for Home Companion.
+Ideas for recipe website for Home Companion.
 # Features
-1. 300000+ recipes (With the help of APIs from RapidAPI)
+1. 300000+ recipes (With the help of APIs from RapidAPI / MealDB API) 
 2. Nutrition Info
 3. Time required to make recipe
 4. Items required
